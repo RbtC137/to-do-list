@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ldmode-switch {
+    width: 40px;
+    height: 20px;
+    background-color: whitesmoke;
+    border: 1px solid grey;
+    border-radius: 11px;
+}
+
+.ldmode-switch .bar {
+    width: 18px;
+    height: 18px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+}
+
+.lm-on {
+    animation: lightOn 0.3s forwards;
+}
+.dm-on {
+    animation: darkOn 0.3s forwards;
+}
+
+@keyframes lightOn {
+    0%{
+        transform: translateX(20px);
+        background-color:darkblue;
+    }
+    100%{
+        transform: translateX(0px);
+        background-color:whitesmoke;
+    }
+}
+
+@keyframes darkOn {
+    100%{
+        transform: translateX(20px);
+        background-color:darkblue;
+    }
+}
