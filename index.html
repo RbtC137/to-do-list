@@ -9,19 +9,22 @@
 <body>
     <div class="container">
         <div class="header">
-            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                <rect x="8" y="8" width="34" height="34" fill="orange"></rect>
-                <rect x="19" y="-16" width="33" height="33" fill="orange" transform="rotate(45)"></rect>
-                <circle cx="25" cy="25" r="16" fill="yellow"></circle>
-            </svg>
             <div class="mode-switch">
-                <div class="bar-js"></div>
+                <div class="bar-js">
+                    <div class="icon-container">
+                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" id="icon-sun">
+                            <rect x="4" y="4" width="17" height="17" fill="orange"></rect>
+                            <rect x="9.5" y="-8" width="16.5" height="16.5" fill="orange" transform="rotate(45)"></rect>
+                            <circle cx="12.5" cy="12.5" r="7.5" fill="yellow"></circle>
+                        </svg>
+                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" id="icon-moon" class="icon-switch">
+                            <circle cx="12.5" cy="12.5" r="8" fill="yellow"></circle>
+                            <circle cx="8.5" cy="12.5" r="4.5" fill="darkblue"></circle>
+                        </svg>
+                    </div>
+                </div>
             </div>
-            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
-                <rect x="8" y="8" width="34" height="34" fill="darkblue"></rect>
-                <circle cx="25" cy="25" r="16" fill="yellow"></circle>
-                <circle cx="17" cy="25" r="9" fill="darkblue"></circle>
-            </svg>
+            
             <h1>To Do List</h1>
             
         </div>

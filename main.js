@@ -5,11 +5,15 @@ const addTaskBtn = document.querySelector(".add-task-btn");
 const addATask = document.querySelector("#add-a-task")
 const taskAdder = document.querySelector(".task-adder");
 
+const sunIcon = document.getElementById("icon-sun");
+const moonIcon = document.getElementById("icon-moon");
 
 const taskList = document.querySelector(".task-list");
 const ldModeSwitch = () => {
     ldBar.classList.toggle("dm-on");
     body.classList.toggle("dark-mode");
+    sunIcon.classList.toggle("icon-switch");
+    moonIcon.classList.toggle("icon-switch");
 }
 
 const adderSwitch = () => {
