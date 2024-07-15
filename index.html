@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/light-dark-mode.css">
     <title>TodoList</title>
 </head>
 <body>
     <div class="container">
-        <h1>To Do List</h1>
-        <h3>A FROG each morning keeps the deadline away.</h3>
-        <div class="ldmode-switch">
-            <div class="bar-js"></div>
+        <div class="header">
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="8" width="34" height="34" fill="orange"></rect>
+                <rect x="19" y="-16" width="33" height="33" fill="orange" transform="rotate(45)"></rect>
+                <circle cx="25" cy="25" r="16" fill="yellow"></circle>
+            </svg>
+            <div class="mode-switch">
+                <div class="bar-js"></div>
+            </div>
+            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="8" width="34" height="34" fill="darkblue"></rect>
+                <circle cx="25" cy="25" r="16" fill="yellow"></circle>
+                <circle cx="17" cy="25" r="9" fill="darkblue"></circle>
+            </svg>
+            <h1>To Do List</h1>
+            
         </div>
+        <h3>A FROG each morning keeps the deadline away.</h3>
+        
         <div class="task-list">
-            <div class="task-item">Task one. <button>Del</button></div>
+            <div class="task-item">Task 1. <button>Del</button></div>
+            <div class="task-item">Task 2. <button>Del</button></div>
+            <div class="task-item">Task 3. <button>Del</button></div>
+            <div class="task-item">Task 4. <button>Del</button></div>
+            <div class="task-item">Task 5. <button>Del</button></div>
         </div>
         <div class="task-adder">
-            <input type="text" placeholder="Add a new FROG...">
-            <input type="date">
-            <button>Add</button>
+            <input id="task-detail" type="text" placeholder="Add a new FROG...">
+            <input id="task-date" type="date">
+            <button id="add-a-task">Add</button>
         </div>
+        <button class="add-task-btn">ADD</button>
     </div>
     <script src="./main.js"></script>
 </body>
